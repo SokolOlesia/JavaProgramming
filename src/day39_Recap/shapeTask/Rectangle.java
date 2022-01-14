@@ -9,7 +9,7 @@ public class Rectangle extends Shape {
 
     public void setLength(double length) {
         if (length <= 0) {
-            System.err.println("Inavlid length:" + length);
+            System.err.println("Invalid length: " + length);
             System.exit(1); //smth wrong
         }
         this.length = length;
@@ -21,7 +21,7 @@ public class Rectangle extends Shape {
 
     public void setWidth(double width) {
         if (width <= 0) {
-            System.err.println("Inavlid width:" + width);
+            System.err.println("Invalid width: " + width);
             System.exit(1); //smth wrong
         }
         this.width = width;
