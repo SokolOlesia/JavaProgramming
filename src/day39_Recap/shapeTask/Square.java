@@ -19,6 +19,27 @@ public class Square extends Shape {
         super("Square");
         setSide(side);
     }
+
+    @Override
+    public double area() {
+        //return super.area(); --> 0
+        return side * side;
+    }
+
+    @Override
+    public double perimeter() {
+        //return super.perimeter(); --> 0
+        return side * 4;
+    }
+
+    @Override
+    public String toString() {
+        return "Square{" +
+                "side=" + side +
+                ", area='" + area() + '\'' +
+                ", perimeter='" + perimeter() + '\'' +
+                '}';
+    }
 }
 
 
