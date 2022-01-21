@@ -1,5 +1,8 @@
 package day41_Exceptions;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
 public class TryCatchBlocks {
     public static void main(String[] args) {
         System.out.println("Test started");
@@ -38,6 +41,19 @@ public class TryCatchBlocks {
             System.out.println("Cydeo".substring(2,0));
         }catch(RuntimeException e) {
             e.printStackTrace(); // full information about this exception
+        }
+
+
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            FileInputStream file = new FileInputStream("File path");
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
         }
     }
 }
