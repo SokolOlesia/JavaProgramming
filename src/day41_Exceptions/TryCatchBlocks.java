@@ -21,11 +21,23 @@ public class TryCatchBlocks {
         try{
             System.out.println(numbers[200]);
             System.out.println("Try block");
-        } catch (ArrayIndexOutOfBoundsException e) {
-            System.out.println("ArrayIndexOutOfBoundsException was occurred");
+        } catch (RuntimeException e) {
+            //System.out.println("RuntimeException was occurred");
+            //e.printStackTrace(); //java.lang.ArrayIndexOutOfBoundsException: Index 200 out of bounds for length 5 at day41_Exceptions.TryCatchBlocks.main(TryCatchBlocks.java:22)
+            System.out.println(e.getMessage()); //Index 200 out of bounds for length 5
         }
 
 
         System.out.println("Test2 Compiled");
+
+        System.out.println("---------------------");
+
+        System.out.println("Test 3 started");
+
+        try{
+            System.out.println("Cydeo".substring(2,0));
+        }catch(RuntimeException e) {
+            e.printStackTrace(); // full information about this exception
+        }
     }
 }
