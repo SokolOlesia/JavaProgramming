@@ -19,4 +19,12 @@ public class DisadvantageOfThrowsKeyword2 {
         method3();
 
     }
+
+    public static void method() {
+        try {
+            method1();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
 }
