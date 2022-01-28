@@ -9,6 +9,12 @@ public class DisadvantageOfThrowsKeyword2 {
         method2();
         method3();
         String str = null;
+        try {
+            System.out.println(str.charAt(0));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
 
     }
     public static void method1() throws InterruptedException { // throws not fixing a problem
