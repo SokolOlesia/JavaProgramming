@@ -4,14 +4,22 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
 public class DisadvantageOfThrowsKeyword2 {
-    public static void method1() throws FileNotFoundException { // throws not fixing a problem
-        new FileInputStream("");
+    public static void main(String[] args) throws InterruptedException {
+        method1();
+        method2();
+        method3();
+        String str = null;
+
+    }
+    public static void method1() throws InterruptedException { // throws not fixing a problem
+       // new FileInputStream("");
+        Thread.sleep(1000);
     }
 
-    public static void method2() throws FileNotFoundException {// now we can handle it
+    public static void method2() throws InterruptedException {// now we can handle it
         method1();
     }
-    public static void method3() throws FileNotFoundException, InterruptedException {
+    public static void method3() throws InterruptedException {
         method2();
         Thread.sleep(1000);
     }
@@ -19,11 +27,10 @@ public class DisadvantageOfThrowsKeyword2 {
         method3();
 
     }
-
     public static void method() {
         try {
             method1();
-        } catch (FileNotFoundException e) {
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }
