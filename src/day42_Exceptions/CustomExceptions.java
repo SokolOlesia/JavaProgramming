@@ -2,7 +2,7 @@ package day42_Exceptions;
 
 //custom unchecked exceptions
 class FadyException extends RuntimeException {
-    public FadyException(String message) {
+    public FadyException(String message) {// unchecked exception
         super(message);
     }
 
@@ -11,7 +11,7 @@ class FadyException extends RuntimeException {
     }
 }
 
-class NoBreakException extends Exception {
+class NoBreakException extends Exception {// checked exception
 
 }
 
