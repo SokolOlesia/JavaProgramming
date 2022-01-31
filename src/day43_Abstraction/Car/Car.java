@@ -1,6 +1,6 @@
 package day43_Abstraction.Car;
 
-public class Car {
+public abstract class Car {
     private final String brand, model;
     private String color;
     private final int year;
@@ -16,7 +16,6 @@ public class Car {
         this.year = year;
         setPrice(price);
     }
-
 
     public String getBrand() {
         return brand;
@@ -47,5 +46,21 @@ public class Car {
             throw new RuntimeException("Invalid price: $" + price);
         }
         this.price = price;
+    }
+
+    public void stop(){
+        System.out.println("Press the brake");
+    }
+
+    public abstract void start();
+
+    public String toString() {
+        return "Car{" +
+                "brand='" + brand + '\'' +
+                ", model='" + model + '\'' +
+                ", color='" + color + '\'' +
+                ", year=" + year +
+                ", price=" + price +
+                '}';
     }
 }
