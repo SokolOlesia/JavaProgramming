@@ -7,7 +7,7 @@ public final class Tesla extends Car{
 
     @Override
     public void start() {
-        System.out.println();
+        System.out.println("Say \"start\" ");
     }
     public final void autoPilot(){
         System.out.println(getBrand() + " " + getModel()+ " has auto pilot feature");
