@@ -6,7 +6,13 @@ public class Honda extends Car{
         super(brand, model, color, year, price);
     }
 
+    @Override
+    public void stop() {
+        System.out.println("Stop");
+    }
+
     public void start(){
         System.out.println("Twist the key to ignition");
     }
+
 }
