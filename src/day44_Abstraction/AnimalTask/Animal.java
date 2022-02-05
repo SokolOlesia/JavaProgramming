@@ -72,6 +72,8 @@ public abstract class Animal {
         System.out.println(name+ " is drinking");
     }
 
+    public abstract  void eat();
+
     public String toString() {
         return getClass().getSimpleName() + "{" +
                 "name='" + name + '\'' +
