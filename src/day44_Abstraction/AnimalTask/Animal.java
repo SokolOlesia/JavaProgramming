@@ -1,6 +1,6 @@
 package day44_Abstraction.AnimalTask;
 
-public class Animal {
+public abstract class Animal {
     private String name;
     private final String breed;
     private final char gender;
@@ -12,6 +12,9 @@ public class Animal {
 
     static {
         canBreath = true;
+//        if(canBreath == false) {
+//            throw new RuntimeException("Invalid");
+//        } extra
     }
 
     public Animal(String name, String breed, char gender, int age, String size, String color) {
@@ -65,5 +68,5 @@ public class Animal {
         return color;
     }
 
-
+    public abstract void eat();
 }
