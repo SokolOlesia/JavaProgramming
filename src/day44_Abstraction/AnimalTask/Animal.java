@@ -68,5 +68,19 @@ public abstract class Animal {
         return color;
     }
 
-    public abstract void eat();
+    public final void drink(){
+        System.out.println(name+ " is drinking");
+    }
+
+    @Override
+    public String toString() {
+        return getClass().getSimpleName() + "{" +
+                "name='" + name + '\'' +
+                ", breed='" + breed + '\'' +
+                ", gender=" + gender +
+                ", age=" + age +
+                ", size='" + size + '\'' +
+                ", color='" + color + '\'' +
+                '}';
+    }
 }
