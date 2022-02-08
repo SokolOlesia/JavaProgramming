@@ -74,8 +74,9 @@ public abstract class Animal {
 
     public abstract  void eat();
 
+    @Override
     public String toString() {
-        return getClass().getSimpleName() + "{" +
+        return "Animal{" +
                 "name='" + name + '\'' +
                 ", breed='" + breed + '\'' +
                 ", gender=" + gender +
