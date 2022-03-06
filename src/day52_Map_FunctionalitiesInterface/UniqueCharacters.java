@@ -23,7 +23,7 @@ public class UniqueCharacters {
         for (String each : arr) {
             int frequency = Collections.frequency(Arrays.asList(arr),each);
             if(frequency == 1) {
-                result.put(each,1);
+                result.put(each,frequency);
             }
 
         }
