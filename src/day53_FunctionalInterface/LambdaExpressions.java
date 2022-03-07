@@ -17,8 +17,7 @@ public class LambdaExpressions {
 
         MyThirdFunctionalInterface<Integer> cube =
                 (h) -> {
-            Integer cubes = h*h*h;
-            return cubes;
+            return h*h*h;
                 };
         Integer resultCube = cube.method(2);
         System.out.println(resultCube);
