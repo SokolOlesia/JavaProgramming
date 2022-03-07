@@ -20,7 +20,7 @@ public class LambdaExpressions {
             Integer cubes = h*h*h;
             return cubes;
                 };
-        Integer resulCube = cube.method(2);
-        System.out.println(resulCube);
+        Integer resultCube = cube.method(2);
+        System.out.println(resultCube);
     }
 }
